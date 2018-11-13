@@ -45,6 +45,6 @@ public class Juego {
                 break;
             }
         }
-        JOptionPane.showMessageDialog(null, "Se han acabado los intentos");
+        JOptionPane.showMessageDialog(null, "Se han terminado los intentos");
     }
 }
