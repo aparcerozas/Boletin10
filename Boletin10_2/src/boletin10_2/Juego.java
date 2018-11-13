@@ -17,11 +17,11 @@ public class Juego {
         Random aleatorio = new Random();
         int num = 1+aleatorio.nextInt(50);
         boolean correcto = false;
-        do{
+        int intentos = Integer.parseInt(JOptionPane.showInputDialog("Introduzca el número de intentos del juego:"));
+        for(int i = 0; i < intentos; i++){
             int respuesta = Integer.parseInt(JOptionPane.showInputDialog("Adivine un número entre 1 y 50:"));
             if(respuesta == num){
                 JOptionPane.showMessageDialog(null, "Respuesta correcta");
-                correcto = true;
                 break;
             }
             else if(Math.abs(num-respuesta) <= 5){
@@ -36,7 +36,7 @@ public class Juego {
             else if(Math.abs(num-respuesta) > 20){
                 JOptionPane.showMessageDialog(null, "Muy lejos");
             }
-            
-        }while(correcto == false);
+        }
+        JOptionPane.showMessageDialog(null, "Se han terminado los intentos");
     }
 }
