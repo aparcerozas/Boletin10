@@ -16,7 +16,6 @@ public class Juego {
     public void iniciarJuego(){
         Random aleatorio = new Random();
         int num = 1+aleatorio.nextInt(50);
-        boolean correcto = false;
         int intentos = Integer.parseInt(JOptionPane.showInputDialog("Introduzca el número de intentos del juego:"));
         for(int i = 0; i < intentos; i++){
             int respuesta = Integer.parseInt(JOptionPane.showInputDialog("Adivine un número entre 1 y 50:"));
