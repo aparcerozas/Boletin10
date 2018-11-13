@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
  */
 public class Juego {  
     public void iniciarJuego(){
-        Random aleatorio = new Random(System.currentTimeMillis());
+        Random aleatorio = new Random();
         int num = 1+aleatorio.nextInt(50);
         boolean correcto = false;
         do{
